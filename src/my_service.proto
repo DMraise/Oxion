@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package my_grpc;
+
+service MyService {
+    rpc SayHello (MyRequest) returns (MyResponse);
+}
+
+message MyRequest {
+    string data = 1;
+}  
+
+message MyResponce {
+    string result = 1;
+}
